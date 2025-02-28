@@ -1,0 +1,30 @@
+---
+import { CounterButton } from 'components/atoms/CounterButton'
+import RootLayout from 'components/layouts/RootLayout/RootLayout.astro'
+
+import S from './_styles.module.css'
+---
+
+<RootLayout title="Boilerplate" description="Boilerplate Astro.js + Solid.js">
+  <div class={S.container}>
+    <header class={S.header} role="banner">Boilerplate</header>
+    <main class={S.main}>
+      <div class={S.wrapper_images}>
+        <img
+          alt="Logo Astro.js"
+          height={77}
+          src="/images/logo_astro.svg"
+          width={77}
+        />
+        <img
+          alt="Logo Solid.js"
+          height={77}
+          src="/images/logo_solidjs.svg"
+          width={87}
+        />
+      </div>
+      <h1 class={S.title}>Astro.js + Solid.js</h1>
+      <CounterButton client:load />
+    </main>
+  </div>
+</RootLayout>
