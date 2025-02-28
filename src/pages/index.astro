@@ -1,5 +1,5 @@
 ---
-import { CounterButton } from 'components/atoms/CounterButton'
+import CounterButton from 'components/atoms/CounterButton/CounterButton.svelte'
 import RootLayout from 'components/layouts/RootLayout/RootLayout.astro'
 
 import S from './_styles.module.css'
@@ -17,13 +17,13 @@ import S from './_styles.module.css'
           width={77}
         />
         <img
-          alt="Logo Solid.js"
+          alt="Logo Svelte"
           height={77}
-          src="/images/logo_solidjs.svg"
+          src="/images/logo_svelte.svg"
           width={87}
         />
       </div>
-      <h1 class={S.title}>Astro.js + Solid.js</h1>
+      <h1 class={S.title}>Astro.js + Svelte</h1>
       <CounterButton client:load />
     </main>
   </div>

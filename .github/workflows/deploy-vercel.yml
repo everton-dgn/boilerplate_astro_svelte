@@ -36,6 +36,11 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
+      #  check:
+      - name: Run Check
+        run: pnpm check
+
+
       #  typecheck:
       - name: Generate Astro Types
         run: pnpm sync

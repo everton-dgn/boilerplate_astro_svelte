@@ -37,6 +37,8 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.astro",
+    "src/**/*.svelte.ts",
+    "src/**/*.svelte",
     "./vitest.setup.ts",
     "src/@types/**/*.d.ts",
     ".astro/types.d.ts",

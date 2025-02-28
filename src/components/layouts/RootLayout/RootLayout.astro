@@ -1,7 +1,7 @@
 ---
 import { ClientRouter } from 'astro:transitions'
 
-import { MainProvider } from 'components/providers/MainProvider'
+import MainProvider from 'components/providers/MainProvider.svelte'
 
 import '@fontsource/poppins/400.css'
 import '@fontsource/poppins/500.css'
@@ -19,7 +19,7 @@ const { title, description } = Astro.props
       name="viewport"
     />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-    <meta content="boilerplate, astro.js, solidjs" name="keywords" />
+    <meta content="boilerplate, astro.js, svelte" name="keywords" />
     <meta content="© Boilerplate" name="copyright" />
     <meta content="#fff" name="theme-color" />
     <link rel="sitemap" href="/sitemap-index.xml" />

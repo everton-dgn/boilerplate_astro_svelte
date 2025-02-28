@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config'
-import solid from '@astrojs/solid-js'
+
+import svelte from '@astrojs/svelte';
 
 export default defineConfig({
   experimental: {
@@ -19,6 +20,6 @@ export default defineConfig({
       exclude: ['fsevents']
     }
   },
-  integrations: [solid()],
+  integrations: [svelte()],
   output: 'static'
 })

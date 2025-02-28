@@ -1,5 +1,3 @@
-// @ts-nocheck
-/// <reference types="vitest" />
 import { getViteConfig } from 'astro/config'
 
 const config = getViteConfig({
@@ -13,7 +11,7 @@ const config = getViteConfig({
     },
     coverage: {
       provider: 'v8',
-      include: ['src/**/*.{ts,tsx}'],
+      include: ['src/**/*.{ts,svelte}'],
       exclude: ['src/assets/', 'src/tests/']
     },
     environment: 'jsdom',

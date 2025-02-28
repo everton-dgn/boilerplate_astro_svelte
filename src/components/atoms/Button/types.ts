@@ -1,6 +1,5 @@
-import type { JSX } from 'solid-js'
+import type { HTMLButtonAttributes } from 'svelte/elements'
 
-export interface ButtonProps
-  extends JSX.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends HTMLButtonAttributes {
   label: string
 }

@@ -234,7 +234,7 @@
   },
   "overrides": [
     {
-      "include": ["*.astro"],
+      "include": ["*.astro", "*.svelte"],
       "linter": {
         "rules": {
           "style": {
@@ -242,7 +242,8 @@
             "useImportType": "off"
           },
           "correctness": {
-            "noUnusedImports": "off"
+            "noUnusedImports": "off",
+            "useHookAtTopLevel": "off"
           }
         }
       }
@@ -262,7 +263,7 @@
       }
     },
     {
-      "include": ["*.ts", "*.tsx", "*.mts", "*.cts", "*.astro"],
+      "include": ["*.ts", "*.tsx", "*.mts", "*.cts", "*.astro", "*.svelte"],
       "linter": {
         "enabled": true,
         "rules": {

@@ -1,26 +1,23 @@
-import { createRoot } from 'solid-js'
-
-import { screen } from '@solidjs/testing-library'
-import { renderWithProviders } from 'tests/providers/component'
+import { render, screen } from '@testing-library/svelte'
 import { event } from 'tests/utils'
 
-import { CounterButton } from '..'
+import CounterButton from '../CounterButton.svelte'
 
-const mockIncrement = vi.fn()
-vi.mock('hooks/useCount', () => ({
+const mockSetIncrement = vi.fn()
+vi.mock('hooks/useCount/useCount.svelte', () => ({
   useCount: () => ({
     count: () => 0,
-    increment: mockIncrement
+    setIncrement: mockSetIncrement
   })
 }))
 
 describe('[Component] Button', () => {
   it('should call a function once on click on the button', async () => {
-    renderWithProviders(createRoot(() => <CounterButton />))
+    render(CounterButton)
 
     const btn = screen.getByRole('button', { name: /count:/i })
     await event().click(btn)
 
-    expect(mockIncrement).toHaveBeenCalledTimes(1)
+    expect(mockSetIncrement).toHaveBeenCalledTimes(1)
   })
 })
