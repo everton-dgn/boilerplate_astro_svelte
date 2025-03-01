@@ -5,5 +5,5 @@ export const useCount = () => ({
     return count
   },
 
-  setIncrement: () => count++,
+  setIncrement: () => count++
 })
