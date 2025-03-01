@@ -48,8 +48,7 @@
   "dependencies": {
     "@astrojs/svelte": "7.0.5",
     "@fontsource/poppins": "5.1.1",
-    "astro": "5.4.1",
-    "clsx": "2.1.1"
+    "astro": "5.4.1"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.4",
