@@ -47,7 +47,7 @@
   "packageManager": "pnpm@10.5.2+sha512.da9dc28cd3ff40d0592188235ab25d3202add8a207afbedc682220e4a0029ffbff4562102b9e6e46b4e3f9e8bd53e6d05de48544b0c57d4b0179e22c76d1199b",
   "dependencies": {
     "@astrojs/svelte": "7.0.5",
-    "@fontsource/poppins": "5.1.1",
+    "@fontsource/inter": "5.2.5",
     "astro": "5.4.1"
   },
   "devDependencies": {
@@ -59,7 +59,7 @@
     "@commitlint/cli": "19.7.1",
     "@commitlint/config-conventional": "19.7.1",
     "@playwright/test": "1.50.1",
-    "@semantic-release/commit-analyzer": "13.0.0",
+    "@semantic-release/commit-analyzer": "13.0.1",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "10.1.7",
     "@semantic-release/npm": "12.0.1",
@@ -68,7 +68,7 @@
     "@testing-library/svelte": "5.2.7",
     "@testing-library/user-event": "14.6.1",
     "@types/jsdom-global": "3.0.7",
-    "@types/node": "22.13.7",
+    "@types/node": "22.13.8",
     "@vitest/coverage-v8": "3.0.7",
     "@vitest/ui": "3.0.7",
     "cssnano": "7.0.6",
@@ -79,7 +79,7 @@
     "postcss": "8.5.3",
     "postcss-import": "16.1.0",
     "postcss-preset-env": "10.1.5",
-    "semantic-release": "24.1.0",
+    "semantic-release": "24.2.3",
     "svelte": "5.20.5",
     "svelte-check": "4.1.4",
     "typescript": "5.8.2",
