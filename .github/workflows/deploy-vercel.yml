@@ -40,7 +40,6 @@ jobs:
       - name: Run Check
         run: pnpm check
 
-
       #  typecheck:
       - name: Generate Astro Types
         run: pnpm sync
