@@ -2,24 +2,17 @@ import { getViteConfig } from 'astro/config'
 
 const config = getViteConfig({
   test: {
-    deps: {
-      optimizer: {
-        web: {
-          include: ['solid-js']
-        }
-      }
-    },
+    environment: 'jsdom',
     coverage: {
       provider: 'v8',
       include: ['src/**/*.{ts,svelte}'],
       exclude: ['src/assets/', 'src/tests/']
     },
-    environment: 'jsdom',
     globals: true,
     passWithNoTests: true,
+    clearMocks: true,
     setupFiles: ['./vitest.setup.ts'],
-    testTransformMode: { web: ['\\.tsx?$'] },
-    include: ['src/**/__tests__/*.test.{ts,tsx}'],
+    include: ['src/**/__tests__/*.test.ts'],
     exclude: ['**/node_modules/**', '**/playwright/**'],
     pool: 'forks',
     poolOptions: {
