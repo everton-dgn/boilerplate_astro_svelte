@@ -16,7 +16,7 @@
     "lint": "biome check ./src",
     "format": "biome check --write ./src",
     "biome:ci": "biome ci ./src --no-errors-on-unmatched --files-ignore-unknown=true",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check": "astro check && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
